@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SimInsights - Collaborative Simulations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+	<!--trial for slideshow -->
+	<script type="text/javascript">
+		var image1=new Image();
+		image1.src="img/hero1-001.jpg";
+		var image2=new Image();
+		image2.src="img/hero1-002.jpg";
+		var image3=new Image();
+		image3.src="img/hero1-003.jpg";	
+	</script>
+	<!--trial for slideshow -->
+  </head>
+  <body>
+
+  	<!-- Top Navigation Begin -->
+  	<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  		<div class="container">
+  			<div class="row">
+  				<!-- Logo and Collapse Buttons -->
+  				<div class="navbar-header">
+				    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				      <span class="sr-only">Toggle navigation</span>
+				      <span class="icon-bar"></span>
+				      <span class="icon-bar"></span>
+				      <span class="icon-bar"></span>
+				    </button>
+				    <a class="navbar-brand" href="#"><img src="img/logo.png" alt="SimInsights - Collaborative Simulations"></a>
+				</div>
+				<!-- Logo and Collapse Buttons -->
+				<!-- Navbar Collapse Menu -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+				    <ul id="topmenu" class="nav navbar-nav">
+				      	<li><a class="janrainEngage" href="#">Log In</a></li>
+				    </ul>
+  				</div><!-- /.navbar-collapse -->
+  			</div>
+  		</div>
+	</nav>
+
+	<!-- Hero Image and Sign Up Buttom  -->
+	<div class="container">
+	    <div id="hero-section" class="hero-section">
+	    	  	<img src="img/hero1-001.jpg" name="slide" class="img-responsive"  />
+	    	<div class="row">
+	    		<div class="hero-text col-md-4">
+	    			<h1>Collaborative Simulation</h1>
+	    			<p>Everyone can engage with games and simulation based learning. Amplify curiosity, unlock creativity and engage in authetic modeling and simulation practices.</p>
+	    			<p><a class="btn btn-primary" href="#">Sign Up</a></p>
+	    		</div>
+	    	</div>
+	    </div>
+	    <div class="row">
+	    	<div class="col-md-12">
+	    		<ul id="sticky" class="nav nav-pills nav-justified">
+	    			<li><a class="begin" href="#game">Game Based Learning</a></li>
+	    			<li><a class="middle" href="#simulation">Simulation Based Learning</a></li>
+	    			<li><a class="end" href="#custom-content">Custom Content Services</a></li>
+	    		</ul>
+	    	</div>
+	    </div>
+	</div>
+	  <!-- Main Content -->
+  	<div class="container"><!-- container div starts here -->
+			<!--	<div class="row">  -->
+		<div class="col-md-12 white-back"><!-- span 12 div starts and ending tag ends before </container> ends-->
+		  		<h2 class="heading" style="text-align: center;">Teachers can engage students in inquiry anywhere, anytime</h2>
+		  		<h3 class="sub-heading" style="text-align: center;">Games, sims and analytics make it easy for teachers to <br>deeply engage students in hands-on learning.</h3>
+			<!--	</div>  -->
+        	<!-- container top1 starts here -->
+    		<div class="row"><!-- row starts here -->
+				<div class="col-md-7"><!-- span7 main starts here -->
+				    <div class="row top1"><!-- inner row starts here -->
+			    		<div class="col-md-12"><!-- innermost span 12 starts here -->			
+							<div class="media">
+							  	<a class="pull-left" href="#">
+							   		 <img class="media-object" src="img/icon-01.jpg" alt="...">
+							 	</a>
+							  	<div class="media-body">
+							    	<h4 class="media-heading">Games and Sims for Physics & Engineering</h4>
+							    	<p class="description">Start engaging your students in hands-on learning with SimInsights games and sims. </p>
+				    			</div>
+							</div>
+					
+							<div class="media">
+							  	<a class="pull-left" href="#">
+							    	<img class="media-object" src="img/icon-05.jpg" alt="...">
+							  	</a>
+							  	<div class="media-body">
+							    	<h4 class="media-heading">Interactive Engagement for Everyone</h4>
+							    	<p class="description">SimInsights makes it easy for everyone to interact and engage with concepts that are not easily explained with language. Whether it is physics or finance, our work helps people simplify the complex and build insights. </p>
+									<br/>
+									<!-- Go to teachers page -->
+									<a class="learn" href="#">Read what teachers are saying about SimInsights</a>
+								</div>
+							</div>
+			    		</div><!-- innermost span 12 ends here -->
+	     			</div><!--inner row  ends here -->
+	        	</div><!-- span6 main ends here -->
+	 			    <div class="col-md-5 align-c"><!-- span5 right starts here -->
+	 			    	<img src="img/teachers-can-engage.jpg" class="img-responsive" alt="Teachers Can Engage Students" style="padding-top: 40px;">
+	 			    </div><!-- span6 right ends here -->
+	     	</div><!-- row  ends here -->
+         <!-- container top1 ends here -->
+         
+		  	</div><!-- span 12 div end here class=(white-back) -->
+	</div><!-- container div closed here -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <!--trial for slideshow -->
+<script>
+	//variable that will increment through the images
+	var step=1
+	function slideit(){
+		//if browser does not support the image object, exit.
+		if (!document.images)
+		return
+		document.images.slide.src=eval("image"+step+".src")
+		if (step<3)
+		step++
+		else
+		step=1
+		//call function "slideit()" every 2.5 seconds
+		setTimeout("slideit()",2500)
+	}
+	slideit()
+</script>
+<!--trial for slideshow -->
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>
+
